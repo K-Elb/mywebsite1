@@ -71,67 +71,51 @@
 <body class="mt-0" data-bs-spy="scroll" data-bs-target="#navScroll" style="overflow-x: hidden;">
   <main style="padding-top: 60px;">
 
+    <!--Back to top button-->
     <button type="button" class="btn btn-light gradient5 btn-floating text-white btn-md" id="btn-back-to-top" data-aos="fade-up">
       <i class="fas fa-arrow-up"></i> Top
     </button>
 
     <!--Navigation Bar-->
-    <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark bg-white fixed-top px-vw-5" tabindex="0">
-      <div class="container-fluid">
-        <img src="img/logo4.png" class="img-fluid rounded-5 no-bottom-radius" loading="lazy" style="height: 50px; width: 50 px;">
-        <a class="navbar-brand text-black" href="#">Pearl Tech</a>
+    <nav id="navScroll" class="navbar navbar-expand-lg navbar-dark bg-white fixed-top px-vw-5" tabindex="0" style="overflow-x: hidden;">
+        <a class="navbar-brand text-black" href="#">
+          <img src="img/logo6.png" class="img-fluid" loading="lazy" style="height: 50px">
+        </a>
         <button class="navbar-toggler btn-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
+          <span><i class="fas fa-bars"></i></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+
+          <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link fs-7 text-black" href="#">
-                Home
-              </a>
+              <a class="nav-link fs-7 text-black" href="#Services">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-7 text-black" href="#Services">
-                Services
-              </a>
+              <a class="nav-link fs-7 text-black" href="#Eng">Solutions</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-7 text-black" href="#Eng">
-                Projects
-              </a>
+              <a class="nav-link fs-7 text-black" href="#USP">Benefits</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-7 text-black" href="#USP">
-                Benefits
-              </a>
+              <a class="nav-link fs-7 text-black" href="#Team">Team</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-7 text-black" href="#Team">
-                Team
-              </a>
-            </li>
-            
-            <li class="nav-item">
-              <a class="nav-link fs-7 text-black" href="#Price">
-                Pricing
-              </a>
+              <a class="nav-link fs-7 text-black" href="#Price">Pricing</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-7 text-black" href="#Stats">
-                Stats
-              </a>
+              <a class="nav-link fs-7 text-black" href="#Stats">Stats</a>
             </li>
           </ul>
   
           <a href="#Form" class="btn btn-light">Contact us</a>
+
         </div>
-      </div>
     </nav>
     <!--Navigation Bar-->
     
     <!--Home Section-->
-    <div class="position-relative" style="background-image: url('img/layered-waves-haikei-up.svg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div id="Home" class="position-relative" style="background-image: url('img/layered-waves-haikei-up.svg'); background-repeat: no-repeat; background-size: cover; background-position: center; overflow-x: hidden;">
       <!-- <div class="video-container bg-dark">
         <video autoplay muted loop class="video" style="opacity: 0.5">
           <source src="img/vid1.mp4 " type="video/mp4">
@@ -141,7 +125,7 @@
         <div class="row d-flex align-items-center justify-content-center py-vh-5" data-aos="fade-down">
           <div class="col-12 col-xl-10">
             <h1 id="hack" class="h5 text-secondary fw-lighter text-white" data-value="OUR MISSION">OUR MISSION</h1>
-            <h1 id="channel-link" class="display-huge mt-3 mb-3 lh-1 fancy text-white">Design.Develop.Deliver.</h1>
+            <h1 id="channel-link" class="display-huge my-3 lh-1 fancy text-white">Design.Develop.Deliver.</h1>
           </div>
           <div class="col-12 col-xl-8">
             <p class="lead text-secondary text-white">To provide innovative and practical engineering solutions, 
@@ -157,16 +141,16 @@
 
     <!--Services Section-->
     <div id="Services">
-      <div class="container px-vw-5" style="padding-top: 16vh;">
+      <div class="container px-vw-5" style="padding-top: 4vh;">
         <div class="row d-flex align-items-center">
           <div class="col-12 col-lg-6 text-lg-end text-black" data-aos="fade-right">
             <span class="h5 text-secondary fw-lighter">What we do</span>
             <h2 class="display-5">At ELB, we provide comprehensive engineering services and solutions to 
               clients across a wide range of industries. Our services include design and analysis, project management, construction supervision, and ongoing maintenance and support. 
             </h2>
-            <div class="col-12 text-lg-end text-black" data-aos="fade-right">
-              <h3 class="border-top border-secondary pt-5 mt-5"><i class="fas fa-chart-pie"></i> Data Analysis</h3>
-              <p class="text-secondary"data-aos="fade-right">Our data analysis service helps our clients extract value from their data by providing advanced analytics solutions. 
+            <div class="col-12 text-lg-end text-black" data-aos="fade-left">
+              <h3 class="pt-5 mt-5"><i class="fas fa-chart-pie"></i> Data Analysis</h3>
+              <p class="text-secondary">Our data analysis service helps our clients extract value from their data by providing advanced analytics solutions. 
               We have extensive experience working with large datasets and use a range of analytical tools to identify patterns, trends, and insights that can help our clients make informed decisions and improve their business performance.<br>
               </p>
             </div>
@@ -199,6 +183,35 @@
       <div class="container px-vw-5 py-vh-3 rounded-5 ">
         <div class="row d-flex gx-5 align-items-center">
           <div class="col-12 col-lg-6">
+            <div class="p-5 pt-0 mt-5" data-aos="fade">
+              <span class="h5 text-secondary fw-lighter">Engineering Software</span>
+              <h2 class="display-5">We are committed to delivering high-quality, cost-effective solutions that 
+                drive value for our clients and contribute to their long-term success.</h2>
+            </div>
+
+            <div class="bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
+              <div class="bg-dark shadow rounded-5 p-0">
+                <img src="img/cad.png" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius w-100" loading="lazy">
+                <div class="p-5">
+                  <h2 class="fw-lighter text-white">CAD Modelling</h2>
+                  <p class="pb-4 text-secondary">We use advanced CAD software to create accurate and detailed 3D models that help our clients visualize and optimize their designs.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
+              <div class="gradient5 shadow rounded-5 p-0">
+                <img src="img/robotics.jpg" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius w-100" loading="lazy">
+                <div class="p-5">
+                  <h2 class="fw-lighter text-white">Lorem ipsum dolor</h2>
+                  <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
             <div class="bg-transparent rounded-5 mb-5" data-aos="zoom-in-up">
               <div class="bg-dark shadow rounded-5 p-0">
                 <img src="img/cfd.jpg" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius w-100" loading="lazy">
@@ -229,34 +242,6 @@
             </div>
           </div>
 
-          <div class="col-12 col-lg-6">
-            <div class="p-5 pt-0 mt-5" data-aos="fade">
-              <span class="h5 text-secondary fw-lighter">Engineering Software</span>
-              <h2 class="display-5">We are committed to delivering high-quality, cost-effective solutions that 
-                drive value for our clients and contribute to their long-term success.</h2>
-            </div>
-
-            <div class="bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
-              <div class="bg-dark shadow rounded-5 p-0">
-                <img src="img/cad.png" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius w-100" loading="lazy">
-                <div class="p-5">
-                  <h2 class="fw-lighter text-white">CAD Modelling</h2>
-                  <p class="pb-4 text-secondary">We use advanced CAD software to create accurate and detailed 3D models that help our clients visualize and optimize their designs.</p>
-                </div>
-              </div>
-            </div>
-
-            <div class="bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
-              <div class="gradient5 shadow rounded-5 p-0">
-                <img src="img/robotic.jpg" alt="abstract image" class="img-fluid rounded-5 no-bottom-radius w-100" loading="lazy">
-                <div class="p-5">
-                  <h2 class="fw-lighter text-white">Lorem ipsum dolor</h2>
-                  <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-                    nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -287,9 +272,8 @@
 
           <div class="col-12 col-lg-6">
             <div class="card bg-transparent mb-5" data-aos="zoom-in-up">
-              <div class="bg-dark shadow rounded-5 p-0">
+              <div class="gradient5 shadow rounded-5 p-0">
                 <div class="p-5">
-                  
                   <h2 class="fw-lighter text-white"><i class="fas fa-dollar-sign"></i>  Cost-Effective</h2>
                   <p class="pb-4 text-secondary">We strive to deliver high-quality engineering solutions that are cost-effective, helping our clients achieve their goals within their budgetary constraints.</p>
                 </div>
@@ -299,7 +283,6 @@
             <div class="card bg-transparent" data-aos="zoom-in-up">
               <div class="bg-dark shadow rounded-5 p-0">
                 <div class="p-5">
-                  
                   <h2 class="fw-lighter text-white"><i class="fab fa-envira fa-lg"></i>  Environmental Sustainability</h2>
                   <p class="pb-4 text-secondary">We are committed to promoting environmental sustainability through our engineering solutions, helping our clients reduce their carbon footprint and minimize their impact on the environment.</p>
                 </div>
@@ -307,9 +290,8 @@
             </div>
 
             <div class="card bg-transparent mb-5 mt-5" data-aos="zoom-in-up">
-              <div class="bg-dark shadow rounded-5 p-0">
+              <div class="gradient5 shadow rounded-5 p-0">
                 <div class="p-5">
-                  
                   <h2 class="fw-lighter text-white"><i class="fas fa-lightbulb"></i>  Innovative & Customised</h2>
                   <p class="pb-4 text-secondary">We focus on delivering innovative and customized engineering solutions that meet our clients' unique needs, leveraging our expertise and cutting-edge technologies to provide tailored solutions that drive business success.</p>
                 </div>
@@ -343,10 +325,10 @@
             <span class="h5 text-secondary fw-lighter">What we charge</span>
             <h2 class="display-4 text-black">Providing professional knowledge for competetive prices</h2>
           </div>
-          <div class="col-12 col-lg-7 gradient5 rounded-5 py-vh-3 text-center my-5" data-aos="zoom-in-up">
+          <div class="col-12 col-lg-7 bg-black rounded-5 py-vh-3 text-center my-5" data-aos="zoom-in-up">
             <p class="lead text-white">By working with us, you will benefit from our experience and expertise, access to the latest technologies and tools,
                and get results that meet their unique needs. You can expect transparent and fair pricing that is tailored to your specific project requirements.</p>
-            <a href="#form" class="btn btn-xl btn-light">Get a quote <i class="fas fa-arrow-down"></i></a>
+            <a href="#Form" class="btn btn-xl btn-light">Get a quote <i class="fas fa-arrow-down"></i></a>
           </div>
         </div>
       </div>
@@ -354,8 +336,8 @@
     <!--Price Section-->
 
     <!--Stats Section-->
-    <div id="Stats" class="container-fluid px-vw-5 position-relative" data-aos="fade">
-      <div class="position-relative py-vh-5 bg-cover bg-center rounded-5" style="background-image: url(img/abstract.jpg)">
+    <div id="Stats" class="container-fluid px-vw-5 position-relative" data-aos="fade-up">
+      <div class="position-relative gradient5 py-vh-5 bg-cover bg-center rounded-5" >
         <div class="container bg-white px-vw-5 py-vh-3 rounded-5 shadow">
           <div class="row d-flex align-items-center">
             <div class="col-12">
@@ -382,17 +364,16 @@
     </div>
     <!--Stats Section-->
 
-    <!--Form Section-->
-    <div id="Form" class="container-fluid position-relative" data-aos="fade-up">
-        <div class="position-relative py-vh-5 rounded-5">
-          <div class="container gradient5 px-vw-5 py-vh-3 rounded-5 shadow">
-              <div class="col-12 d-flex bg-black rounded-5 py-5" data-aos="fade-up">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoVB5iSF9OrT0FRPy3GQzgk0wGUOhWGvRKWMQtiaiRZTO9Mw/viewform?embedded=true" width="100%" height="1100px" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-              </div>
+    <!-- Form Section-->
+    <div id="Form" class="container-fluid py-vh-5 px-vw-5 position-relative" data-aos="fade-up">
+      <div class="position-relative py-vh-5 rounded-5 justify-content-center bg-cover" style="background-image: url('img/stacked-waves-haikei.svg'); background-repeat: no-repeat; background-size: cover; background-position: center;">
+          <div class="container d-flex bg-lightop rounded-2 justify-content-center" data-aos="fade-up">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfoVB5iSF9OrT0FRPy3GQzgk0wGUOhWGvRKWMQtiaiRZTO9Mw/viewform?embedded=true&hl=en" width="640" height="740" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> 
           </div>
-        </div>
+      </div>
     </div>
-    <!--Form Section-->
+    
+    <!--Form Section -->
 
     <!--Footer Section-->
     <footer style="background-image: url('img/layered-waves-haikei-down.svg'); background-repeat: no-repeat; background-size: cover; background-position: bottom;">
@@ -418,8 +399,7 @@
           <div class="col-12 col-lg-6 col-xl-3 p-5">
             <ul class="nav flex-column">
               <li class="nav-item">
-                <img src="img/logo4.png" class="img-fluid rounded-5 no-bottom-radius" loading="lazy" style="height: 50px; width: 50 px;">
-                <a class="navbar-brand text-black" href="#">Pearl Tech</a>
+                <img src="img/logo6.png" class="img-fluid" loading="lazy" style="height: 50px; width: 50 px;">
                 
               </li>
               <p class="text-secondary py-5">Leading engineering services firm that provides innovative solutions and expert consultancy services to a wide range of industries.</p>
@@ -430,13 +410,10 @@
             <h3 class="h6 mb-3">Website</h3>
             <ul class="nav flex-column">
               <li class="nav-item">
-                <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link link-secondary ps-0" href="#Services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link link-secondary ps-0" href="#Eng">Projects</a>
+                <a class="nav-link link-secondary ps-0" href="#Eng">Solutions</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link link-secondary ps-0" href="#USP">Benefits</a>
